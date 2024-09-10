@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#define 
+#define MAX 5
 
 int main() 
 {
@@ -10,7 +10,8 @@ int main()
   //estrutura de repeticao
   while (cont < MAX)
 {
-    printf("Valot do contador: %d\n", cont);
+    printf("Valor do contador: %d\n", cont);
+    cont = cont + 1; //ou cont++;
 }
 return 0;
 }
