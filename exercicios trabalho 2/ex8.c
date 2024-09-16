@@ -13,12 +13,12 @@ int main() {
         scanf("%d", &voto);
 
         if (voto == 0) {
-            break; // Finaliza a contagem de votos
+            break; /
         }
 
-        total++; // Incrementa o total de votos
+        total++; 
 
-        // Verifica o voto e incrementa o respectivo contador
+        
         switch (voto) {
             case 1:
                 votosc1++;
@@ -40,7 +40,7 @@ int main() {
                 break;
             default:
                 printf("Voto não existente!\n");
-                total--; // Não conta votos inválidos
+                total--; 
         }
     }
 
@@ -49,7 +49,7 @@ int main() {
         return 0;
     }
 
-    // Exibe o total de votos para cada candidato e seus percentuais
+    
     printf("\nResultados da votação:\n");
     printf("O total de votos para Marcos foi de: %d (%.2f%%)\n", votosc1, (votosc1 * 100.0) / total);
     printf("O total de votos para Eliana foi de: %d (%.2f%%)\n", votosc2, (votosc2 * 100.0) / total);
