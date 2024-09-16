@@ -29,7 +29,7 @@ int main()
     }
   }
 
-  printf("Foram %d aprovados esse ano.", aprovados);
+  printf("Foram %d aprovados esse ano e", aprovados);
   printf("Foram %d reprovados esse ano.", reprovadors);
 
   return 0;
