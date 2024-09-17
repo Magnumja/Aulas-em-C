@@ -9,6 +9,7 @@ int main()
 {
 
     int numero, x = 0, fatorial = 1;
+    system("cls");
 
     printf("Me fale o numero que voce deseja calcular o fatorial: ");
     scanf("%d", &numero);
@@ -21,7 +22,7 @@ int main()
         x -= 1;
     }
 
-    printf("O resultado é: %d", fatorial);
+    printf("O resultado e: %d", fatorial);
 
     return 0;
 }
