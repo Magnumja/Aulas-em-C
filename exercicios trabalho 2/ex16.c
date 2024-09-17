@@ -8,18 +8,20 @@
 int main()
 {
 
-    int numero, num = 0, resultado, fatorial = 0;
+    int numero, x = 0, fatorial = 1;
 
     printf("Me fale o numero que voce deseja calcular o fatorial: ");
     scanf("%d", &numero);
 
-    while (fatorial == 1)
+    x = numero;
+
+    while (x > 1)
     {
-        fatorial = x - num;
-        num -= 1;
+        fatorial = fatorial * x;
+        x -= 1;
     }
 
-    resultado = x * fatorial++;
+    printf("O resultado é: %d", fatorial);
 
-    printf("O resultado é: %d", resultado);
+    return 0;
 }
