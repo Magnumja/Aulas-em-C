@@ -4,6 +4,8 @@ int fatorial(int n)
 {
     int f = 1;
     int i = 1;
+    sytem("cls");
+
     while (i <= n)
     {
         f *= i;

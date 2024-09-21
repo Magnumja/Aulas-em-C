@@ -4,6 +4,7 @@ int main()
 {
     int numero, quantidade = 0, soma = 0;
     float media;
+    system("cls");
 
     do
     {

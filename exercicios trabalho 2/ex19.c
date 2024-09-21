@@ -4,6 +4,7 @@ int main()
 {
     int soma = 0;
     int i = 10;
+    system("cls");
 
     while (i <= 50)
     {

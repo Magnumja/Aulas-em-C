@@ -2,6 +2,7 @@
 
 int main() {
     int B, E, resultado = 1;
+    system("cls");
 
     
     printf("Digite o valor da base (B): ");
