@@ -21,33 +21,36 @@ int main()
 
     switch (op)
     {
-    case 1:
-        aumento = salario * 0.05;
-        novo_salario = aumento + salario;
-        printf("Seu novo salario tem o valor de %.2f reais. \n", novo_salario);
-        printf("Seu salario antigo era de %.2f reais. \n", salario);
-        printf("A diferenca entre os dois foi de %.2f reais. \n", aumento);
-        break;
-    case 2:
-        aumento = salario * 0.08;
-        novo_salario = aumento + salario;
-        printf("Seu novo salario tem o valor de %.2f reais. \n", novo_salario);
-        printf("Seu salario antigo era de %.2f reais. \n", salario);
-        printf("A diferenca entre os dois foi de %.2f reais. \n", aumento);
-    case 3:
-        aumento = salario * 0.1;
-        novo_salario = aumento + salario;
-        printf("Seu novo salario tem o valor de %.2f reais. \n", novo_salario);
-        printf("Seu salario antigo era de %.2f reais. \n", salario);
-        printf("A diferenca entre os dois foi de %.2f reais. \n", aumento);
-    case 4:
-        aumento = salario * 0.02;
-        novo_salario = aumento + salario;
-        printf("Seu novo salario tem o valor de %.2f reais. \n", novo_salario);
-        printf("Seu salario antigo era de %.2f reais. \n", salario);
-        printf("A diferenca entre os dois foi de %.2f reais. \n", aumento);
-    default:
-        break;
+         case 1:
+            aumento = salario * 0.05;
+            novo_salario = aumento + salario;
+            printf("Seu novo salario tem o valor de %.2f reais. \n", novo_salario);
+            printf("Seu salario antigo era de %.2f reais. \n", salario);
+            printf("A diferenca entre os dois foi de %.2f reais. \n", aumento);
+            break;
+         case 2:
+            aumento = salario * 0.08;
+            novo_salario = aumento + salario;
+            printf("Seu novo salario tem o valor de %.2f reais. \n", novo_salario);
+            printf("Seu salario antigo era de %.2f reais. \n", salario);
+            printf("A diferenca entre os dois foi de %.2f reais. \n", aumento);
+            break;
+         case 3:
+            aumento = salario * 0.1;
+            novo_salario = aumento + salario;
+            printf("Seu novo salario tem o valor de %.2f reais. \n", novo_salario);
+            printf("Seu salario antigo era de %.2f reais. \n", salario);
+            printf("A diferenca entre os dois foi de %.2f reais. \n", aumento);
+            break;
+         case 4:
+            aumento = salario * 0.02;
+            novo_salario = aumento + salario;
+            printf("Seu novo salario tem o valor de %.2f reais. \n", novo_salario);
+            printf("Seu salario antigo era de %.2f reais. \n", salario);
+            printf("A diferenca entre os dois foi de %.2f reais. \n", aumento);
+            break;
+         default:
+            break;
     }
 
     return 0;
