@@ -6,7 +6,7 @@ int main()
 
     int idade;
     char classe[30];
-    
+
     system("cls");
     printf("Me informe a sua idade para classificar a sua classe: ");
     scanf("%d", &idade);
