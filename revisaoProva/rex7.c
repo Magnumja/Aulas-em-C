@@ -23,7 +23,7 @@ int main()
         if (num<menor)
         {
             menor = num;
-        }
+        }\
         cont+= 1;
     }
     
