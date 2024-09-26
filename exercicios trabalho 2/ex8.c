@@ -13,7 +13,7 @@ int main() {
         scanf("%d", &voto);
 
         if (voto == 0) {
-            break; /
+            break; 
         }
 
         total++; 
