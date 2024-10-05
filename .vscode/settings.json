@@ -2,7 +2,8 @@
     "files.associations": {
         "*.embeddedhtml": "html",
         "stdlib.h": "c",
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "ex.h": "c"
     },
     "terminal.integrated.env.windows": {}
 }

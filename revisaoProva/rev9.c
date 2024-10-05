@@ -8,8 +8,8 @@ int main()
     system("cls");
 
     printf("--------------------------- \n");
-    printf("       Seja Bem-vindo       \n");
-    printf("      Defina sua senha      \n");
+    printf("\tSeja Bem-vindo       \n");
+    printf("\tDefina sua senha      \n");
     printf(" Pressione 1 para continuar \n");
     printf("        0 para parar        \n");
     printf("--------------------------- \n");
@@ -52,7 +52,7 @@ int main()
 
             if (tentativa == senha) 
             {
-                printf("Tudo certo, sua senha foi salva e é %d.\n", senha);
+                printf("Tudo certo, sua senha foi salva e \x82 %d.\n", senha);
                 break;
             } 
             else if (tentativa_atual < tentativas_restantes) 
