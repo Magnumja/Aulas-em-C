@@ -8,7 +8,7 @@ int main()
 
     printf("Informe o salário e o número de filhos dos habitantes (digite um salário negativo para finalizar):\n");
 
-    while (1)
+    for (;;)
     {
         printf("Informe o salario: ");
         scanf("%f", &salario);

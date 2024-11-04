@@ -8,7 +8,6 @@ int main()
 
     int num1, num2, chutes;
 
-    
     printf("Jogador 1, por favor, fale o numero que deseja que seu adversario adivinhe: ");
     scanf("%d", &num1);
 
@@ -34,7 +33,6 @@ int main()
             break;
         }
     }
-
 
     if (chutes > MAX)
     {

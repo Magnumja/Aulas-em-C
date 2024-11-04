@@ -1,17 +1,14 @@
-//  Faça um algoritmo que receba a média anual de cada aluno de uma classe.
-// Ao final mostre quantos alunos foram aprovados e quantos alunos foram reprovados
-// Considere média maior igual a 7 para aprovação e como critério de parada o valor -1 atribuído à média anual.
+#include <stdio.h>
 
 int main()
 {
-
   float media;
-  int aprovados = 0, reprovadors = 0;
+  int aprovados = 0, reprovados = 0;
   system("cls");
 
   printf("Me fale quais foram as medias dos alunos: (digite -1 para encerrar) \n");
 
-  while (1)
+  for (;;)
   {
     scanf("%f", &media);
 
@@ -19,18 +16,19 @@ int main()
     {
       break;
     }
+
     if (media >= 7)
     {
       aprovados++;
     }
     else
     {
-      reprovadors++;
+      reprovados++;
     }
   }
 
-  printf("Foram %d aprovados esse ano e", aprovados);
-  printf("Foram %d reprovados esse ano.", reprovadors);
+  printf("Foram %d aprovados esse ano e ", aprovados);
+  printf("%d reprovados esse ano.\n", reprovados);
 
   return 0;
 }

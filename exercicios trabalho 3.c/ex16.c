@@ -1,28 +1,20 @@
-// Faça um algoritmo que calcule o número fatorial de um número.
-// Ex.: 5! = 1x2x3x4x5 = 120
-// Lembrando que 0! =  1.
-
 #include <stdio.h>
 #include <stdlib.h>
 
 int main()
 {
-
-    int numero, x = 0, fatorial = 1;
+    int numero, fatorial = 1;
     system("cls");
 
     printf("Me fale o numero que voce deseja calcular o fatorial: ");
     scanf("%d", &numero);
 
-    x = numero;
-
-    while (x > 1)
+    for (int x = numero; x > 1; x--)
     {
-        fatorial = fatorial * x;
-        x -= 1;
+        fatorial *= x;
     }
 
-    printf("O resultado e: %d", fatorial);
+    printf("O resultado é: %d\n", fatorial);
 
     return 0;
 }

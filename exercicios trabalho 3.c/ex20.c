@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main()
 {
@@ -6,17 +7,19 @@ int main()
     float media;
     system("cls");
 
-    do
+    for (;;)
     {
         printf("Digite um número inteiro positivo (ou um número negativo para sair): ");
         scanf("%d", &numero);
 
-        if (numero >= 0)
+        if (numero < 0)
         {
-            soma += numero;
-            quantidade++;
+            break;
         }
-    } while (numero >= 0);
+
+        soma += numero;
+        quantidade++;
+    }
 
     if (quantidade > 0)
     {

@@ -1,45 +1,31 @@
-
 #include <stdio.h>
 
 int main()
 {
-    int numero;
-    int maior = -1;
-    int menor = -1;
+    int numeroAluno, altura;
+    int numeroMaisAlto, alturaMaisAlto = 0;
+    int numeroMaisBaixo, alturaMaisBaixo = 300; 
 
-    printf("Digite os números inteiros positivos (digite -1 para terminar):\n");
-
-    for (;;)
+    for (int i = 0; i < 10; i++)
     {
-        scanf("%d", &numero);
+        printf("Digite o número do aluno e sua altura em cm (Aluno %d): ", i + 1);
+        scanf("%d %d", &numeroAluno, &altura);
 
-        if (numero == -1)
+        if (altura > alturaMaisAlto)
         {
-            break;
+            alturaMaisAlto = altura;
+            numeroMaisAlto = numeroAluno;
         }
 
-        if (numero > 0)
+        if (altura < alturaMaisBaixo)
         {
-            if (maior == -1 || numero > maior)
-            {
-                maior = numero;
-            }
-            if (menor == -1 || numero < menor)
-            {
-                menor = numero;
-            }
+            alturaMaisBaixo = altura;
+            numeroMaisBaixo = numeroAluno;
         }
     }
 
-    if (maior != -1 && menor != -1)
-    {
-        printf("O menor valor é: %d\n", menor);
-        printf("O maior valor é: %d\n", maior);
-    }
-    else
-    {
-        printf("Nenhum número válido foi digitado.\n");
-    }
+    printf("Aluno mais alto: Número: %d, Altura: %d cm\n", numeroMaisAlto, alturaMaisAlto);
+    printf("Aluno mais baixo: Número: %d, Altura: %d cm\n", numeroMaisBaixo, alturaMaisBaixo);
 
     return 0;
 }
