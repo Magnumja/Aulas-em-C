@@ -3,7 +3,8 @@
         "*.embeddedhtml": "html",
         "stdlib.h": "c",
         "stdio.h": "c",
-        "ex.h": "c"
+        "ex.h": "c",
+        "REV5.C": "cpp"
     },
     "terminal.integrated.env.windows": {}
 }
