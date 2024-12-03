@@ -1,38 +1,43 @@
-// Programa que lê 3 notas de 5 alunos e as armazena em uma
-// matriz de ordem 5 X 3 de números reais, e em seguida imprime os valores
-// lidos.
-
-//  Forma Geral:
-//  tipo nome_matriz [dim1][dim2]...[dimN] ;
-//  Onde:
-//  tipo: qualquer tipo possível na linguagem C.
-//  nome_matriz: nome da matriz.
-//  [dim1][dim2]...[dimN]: cada tamanho inteiro entre
-//  colchetes define o tamanho da respectiva dimensão
-//  desejada.
-
 #include <stdio.h>
+#include <stdlib.h>
 
 int main()
 {
+    int Temperaturas[31];
+    int Soma = 0, i;
+    float Media;
+    int Diferenca;
 
-    float notas[5][3];
-    int i, j; // índices que representam linhas e colunas
-    for (i = 0; i < 5; i++)
+    for( i = 0; i < 31; i++)
     {
-        for (j = 0; j < 3; j++)
+        printf("Digite a Temperatura do %do Dia: ", i + 1);
+        scanf("%d", &Temperaturas[i]);
+
+        Soma += Temperaturas[i];
+    }
+
+    Media = Soma/31;
+
+    printf("\n A media das temperaturas foi %.2f", Media);
+    printf("\n As Diferencas das Temperaturas com a Media sao: ", Media);
+
+    for ( i = 0; i <31; i++ )
+    {
+        if( Media > Temperaturas[i])
         {
-            printf("\nDigite a %da nota do aluno %d: ", j + 1, i + 1);
-            scanf("%f", &notas[i][j]);
+            Diferenca = Media - Temperaturas[i];
+            printf("\n %do Dia, %d graus abaixo.", i + 1, Diferenca);
+        }
+        if( Media = Temperaturas[i] )
+        {
+            printf("\n %do Dia, 0 graus, na media.", i + 1);
+
+        }
+        else
+        {
+            Diferenca = Temperaturas[i] - Media;
+            printf("\n %do Dia, %d graus acima.", i + 1, Diferenca);
         }
     }
-    printf("\nValores lidos:\n\n");
-    for (i = 0; i < 5; i++)
-    {
-        for (j = 0; j < 3; j++)
-        {
-            printf("%5.1f", notas[i][j]);
-        }
-        printf("\n");
-    }
+
 }
