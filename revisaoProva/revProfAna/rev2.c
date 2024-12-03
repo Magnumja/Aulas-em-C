@@ -23,15 +23,6 @@ int main()
         printf("\n %d: %d", i+1, lista[i]);
             
     }
-    
-
-
-
-
-
-
-
-
 
 
 }
