@@ -1,4 +1,24 @@
 #Revisao
 #Calculadora Simplificada -> usuario fornece 2 valores e que tenha operacoes 
-#como: 0-Saie, 1- soma, 2-Subtrair, 3- Multiplicar, 4- dividir
+#como: 0-Sair, 1- soma, 2-Subtrair, 3- Multiplicar, 4- dividir
 
+using namespace std;
+
+int main()
+{
+   float n1, n2, result
+   count << "Calculadora Simplificada" << endl;
+  count <<"0-Sair" << endl;
+  count <<"1-Soma"<<endl;
+  cout <<"2-Subbtrair"<< endl;
+  cout <<"3-Multiplicar"<<endl;
+  cout <<"4-Dividir"<<endl;
+  cout<<"Op.: ";
+  cin>>op;
+  
+
+
+
+
+
+}
