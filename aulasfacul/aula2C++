@@ -71,3 +71,14 @@ do {
 #A função validarNota é chamada para verificar se a nota informada é válida.
 #Se a nota for válida (função retorna true), o programa exibe a mensagem "Nota aceita!".
 #Se a nota for inválida (função retorna false), o programa exibe a mensagem "Nota inválida! Tente novamente
+
+6. Condição de continuação do laço
+} while (!validarNota(nota));  // Continua o loop enquanto a nota não for válida
+
+#O do-while continua executando o bloco de código até que uma nota válida (nota dentro do intervalo 0-10) seja fornecida.
+#O laço vai ser repetido enquanto validarNota(nota) retornar false (ou seja, enquanto a nota não for válida).
+
+7. Finalização do programa
+return 0;  // Finaliza o programa
+
+#Quando a nota válida é informada, o laço é interrompido e o programa termina com o retorno 0, indicando que o programa foi executado com sucesso.
