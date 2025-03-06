@@ -19,14 +19,13 @@ int main()
 
         if (!validarNota(nota))
         {
-            cout << "Nota invalda! tente novamente.\n";
+            cout << "Nota invalida! tente novamente.\n";
         }
-    } 
-    
-    while (!validarNota(nota));
-    
-    cout << "Nota aceita: " << nota << endl;
+    }
 
+    while (!validarNota(nota));
+
+    cout << "Nota aceita: " << nota << endl;
 
     return 0;
 }
