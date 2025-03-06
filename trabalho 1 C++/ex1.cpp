@@ -19,7 +19,7 @@ int main()
 
         if (!validarNota(nota))
         {
-            cout << "Nota invalida! tente novamente.\n";
+            cout << "Nota invalda! tente novamente.\n";
         }
     } 
     
