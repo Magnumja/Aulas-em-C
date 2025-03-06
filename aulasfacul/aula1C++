@@ -1,0 +1,79 @@
+Código final:
+#include <iostream>
+
+using namespace std;
+
+void receber_num(int op);
+
+float n1,n2;
+
+int main()
+{
+    //Declaração das variáveis
+    float result;
+    int op=-1;
+    while(op != 0)
+    {
+        //system("cls");
+        cout << "Calculadora Simplificada"<< endl;
+        cout <<"Menu"<<endl;
+        cout <<"0 - Sair"<<endl;
+        cout <<"1 - Somar"<<endl;
+        cout <<"2 - Subtrair"<<endl;
+        cout <<"3 - Multiplicar"<<endl;
+        cout <<"4 - Dividir"<<endl;
+        cout <<"Op.: ";
+        cin >> op;
+        //Tratar as opções
+        switch (op)
+        {
+        case 0:
+            cout<<"Obrigado por usar o sistema 0/"<<endl;
+            break;
+        case 1:
+            cout<<"Somar"<<endl;
+            receber_num(op);
+            result=n1+n2;
+            cout<<"Resultado: "<<result<<endl;
+            break;
+        case 2:
+            cout<<"Subtrair"<<endl;
+            receber_num(op);
+            result=n1-n2;
+            cout<<"Resultado: "<<result<<endl;
+            break;
+        case 3:
+            cout<<"Multiplicar"<<endl;
+            receber_num(op);
+            result=n1*n2;
+            cout<<"Resultado: "<<result<<endl;
+            break;
+        case 4:
+            cout<<"Dividir"<<endl;
+            receber_num(op);
+            result=n1/n2;
+            cout<<"Resultado: "<<result<<endl;
+            break;
+        default:
+            cout<<"Op. invalida!";
+        }
+    }
+
+    return 0;
+}
+//Funções e procedimentos
+void receber_num(int op)
+{
+    cout<<"Informe n1: ";
+    cin >> n1;
+    cout<<"Informe n2: ";
+    cin >>n2;
+    if(op == 4)
+    {
+        while(n2 == 0)
+        {
+            cout<<"Informe novamente n2: ";
+            cin>>n2;
+        }
+    }
+}
