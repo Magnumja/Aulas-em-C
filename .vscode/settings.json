@@ -4,7 +4,9 @@
         "stdlib.h": "c",
         "stdio.h": "c",
         "ex.h": "c",
-        "REV5.C": "cpp"
+        "REV5.C": "cpp",
+        "iostream": "cpp",
+        "ostream": "cpp"
     },
     "terminal.integrated.env.windows": {}
 }
