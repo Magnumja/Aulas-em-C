@@ -5,8 +5,8 @@ void imprimirInvertido(int vetor[], int indice, int tamanho) {
     if (indice == tamanho) {
         return;
     }
-    imprimirInvertido(vetor, indice + 1, tamanho);  // Chama recursivamente para ir até o final
-    cout << vetor[indice] << " ";  // Imprime da última posição para a primeira
+    imprimirInvertido(vetor, indice + 1, tamanho);  
+    cout << vetor[indice] << " ";  
 }
 
 int main() {
@@ -22,7 +22,7 @@ int main() {
     }
 
     cout << "\nOrdem invertida: ";
-    imprimirInvertido(vetor, 0, n);  // Começa o índice da recursão em 0
+    imprimirInvertido(vetor, 0, n);  
     cout << endl;
 
     return 0;
