@@ -47,7 +47,7 @@ using namespace std;
 struct Robo {
     int identificador;
     char nome[50];
-    int l, c; // posição no campo (-1 quando não está)
+    int l, c; // posição no campo (-1 quando não está, bem melhr que zero. Tentei por zero mas confundia muito com os locais corretos)
     int energia;
     int nivel;
 };
