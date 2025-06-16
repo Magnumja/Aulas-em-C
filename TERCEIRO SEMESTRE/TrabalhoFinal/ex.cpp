@@ -57,7 +57,7 @@ void Cadastro(Robo cadastrarRobo[], int tamanho) {
     cin.ignore();
     for (int i = 0; i < tamanho; i++) {
         cadastrarRobo[i].identificador = i;
-        cadastrarRobo[i].l = -1; // Não está no campo ainda
+        cadastrarRobo[i].l = -1; // Não está no campo ainda, fica melhor assim
         cadastrarRobo[i].c = -1;
 
         cout << "Identificador: " << cadastrarRobo[i].identificador << endl;
