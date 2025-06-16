@@ -2,7 +2,7 @@
 
 ![Linguagens](https://img.shields.io/badge/Linguagens-C%20%7C%20C%2B%2B-blue)
 ![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow)
-![Licença](https://img.shields.io/badge/Licença-MIT-green)
+
 
 Este repositório reúne todos os projetos, exercícios e códigos que desenvolvi ao longo do curso de **Ciência da Computação na UCDB (Universidade Católica Dom Bosco)**, utilizando as linguagens **C** e **C++**.
 
